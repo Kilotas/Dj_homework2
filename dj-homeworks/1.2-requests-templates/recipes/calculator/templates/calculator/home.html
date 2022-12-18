@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Рецепты</title>
+</head>
+<body>
+  <h1>Список доступных рецептоы</h1>
+  {% for dish in recipe %}
+<p><li><a href="/recipes/{{ recipe }}">{{ recipe|capfirst }}</a></li></p>
+ {% endfor %}
+</body>
+</html>
